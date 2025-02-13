@@ -7,3 +7,7 @@
   background-repeat: no-repeat; /* Optional: Prevents the image from repeating */
   @apply h-screen w-screen rounded 
 }
+
+.nav-items{
+  @apply text-base md:text-lg font-semibold text-gray-700 hover:text-purple-500 transition duration-300 cursor-pointer
+}

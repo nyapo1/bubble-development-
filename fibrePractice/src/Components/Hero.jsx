@@ -1,30 +1,47 @@
 import React from 'react';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaStar ,FaRocket} from 'react-icons/fa';
 
-const Hero = () => {
+const Hero1 = () => {
+  const properties = ["Reliability", "Effectiveness", "Speed"];
+  const classes = 'text-yellow-500';
+
   return (
-    <div className='w-screen h-screen bg-gradient-to-tr relative from-blue-500 via-white to-purple-600 flex justify-center'>
-      <nav className="flex justify-center items-center md:w-[70vw] w-[90vw] h-[10vh] max-md:h-[8vh] bg-white absolute top-3 shadow-md rounded-full">
-        <ul className="flex space-x-4 md:space-x-8 justify-around flex-wrap">
-          <li className="text-base md:text-lg font-semibold text-gray-700 hover:text-purple-500 transition duration-300 max-sm:hidden">
-            <a href="#home">Home</a>
-          </li>
-          <li className="text-base md:text-lg font-semibold text-gray-700 hover:text-purple-500 transition duration-300">
-            <a href="#about">About</a>
-          </li>
-          <li className="text-base md:text-lg font-semibold text-gray-700 hover:text-purple-500 transition duration-300">
-            <a href="#services">Services</a>
-          </li>
-          <li className="text-base md:text-lg font-semibold text-gray-700 hover:text-purple-500 transition duration-300">
-            <a href="#contact">Contact</a>
-          </li>
-          <li className="text-base md:text-lg font-semibold text-gray-700 bg-purple-600 rounded-full px-3 md:px-5 py-1 hover:text-white transition duration-300 flex-shrink-0">
-            <a href="#contact" className='btn'>Start <FaArrowRight className='inline-block font-bold'/></a>
-          </li>
-        </ul>
-      </nav>
+    <div className=' max-sm:mt-20 mt-30 flex flex-col  '>
+      <section className='flex space-x-4 justify-center'>
+      {properties.map((property, index) => (
+        <div key={index} className='flex flex-col items-center'>
+          <div className='p-2 flex'>
+            <FaStar className={classes} />
+            <FaStar className={classes} />
+            <FaStar className={classes} />
+            <FaStar className={classes} />
+            <FaStar className={classes} />
+          </div>
+          <p className='text-center font-bold'>{property}</p>
+        </div>
+      ))}
+      </section>
+
+      <h1 className='text-center font-bold px-5 text-purple-950 mb-8 mt-10 text-4xl'>
+        Unlimited Bubble development for results-driven 
+        <span className=' text-purple-500'> startups & businesses</span>
+      </h1>
+
+     <p className='text-center px-20 font-medium'>
+     In today's fast-paced digital landscape, startups and businesses require innovative solutions that drive results. Our unlimited Bubble development services empower organizations to rapidly prototype and launch applications tailored to their unique needs.
+     </p>
+
+     <div className='text-center mt-8'>
+      <button className='rounded-full bg-purple-700 text-white text-center max-sm:px-3 max-sm:py-1 px-4 py-3 cursor-pointer text-2xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300'>
+        Star My Project
+        <FaRocket className='inline-block ml-2'/>
+      </button>
+     </div>
+
+    
+      
     </div>
   );
 };
 
-export default Hero;
+export default Hero1;
