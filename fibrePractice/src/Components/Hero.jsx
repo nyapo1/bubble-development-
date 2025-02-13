@@ -6,7 +6,7 @@ const Hero1 = () => {
   const classes = 'text-yellow-500';
 
   return (
-    <div className=' max-sm:mt-20 mt-30 flex flex-col  '>
+    <div className=' mt-30 md:mt-45 flex flex-col  '>
       <section className='flex space-x-4 justify-center'>
       {properties.map((property, index) => (
         <div key={index} className='flex flex-col items-center'>
