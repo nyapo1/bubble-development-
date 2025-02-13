@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.hero-section {
+  background-image: url("/assets/logo-bg.jpg");
+  background-position: top;
+  background-size: cover; /* Optional: Ensures the image covers the entire section */
+  background-repeat: no-repeat; /* Optional: Prevents the image from repeating */
+  @apply h-screen w-screen rounded 
+}
