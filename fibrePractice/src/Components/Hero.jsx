@@ -22,13 +22,13 @@ const Hero1 = () => {
       ))}
       </section>
 
-      <h1 className='text-center font-bold px-5 text-purple-950 mb-8 mt-10 text-4xl'>
+      <h1 className='text-center max-sm:font-semibold font-bold px-5 text-purple-950 mb-8 mt-10 text-4xl max-sm:text-2xl'>
         Unlimited Bubble development for results-driven 
         <span className=' text-purple-500'> startups & businesses</span>
       </h1>
 
      <p className='text-center px-20 font-medium'>
-     In today's fast-paced digital landscape, startups and businesses require innovative solutions that drive results. Our unlimited Bubble development services empower organizations to rapidly prototype and launch applications tailored to their unique needs.
+     In today's fast-paced digital landscape, startups and businesses require innovative solutions that drive results. <span className='max-sm:hidden'>Our unlimited Bubble development services empower organizations to rapidly prototype and launch applications tailored to their unique needs.</span>
      </p>
 
      <div className='text-center mt-8'>
