@@ -6,7 +6,7 @@ const Hero = () => {
     <div className='w-screen h-screen bg-gradient-to-tr relative from-blue-500 via-white to-purple-600 flex justify-center'>
       <nav className="flex justify-center items-center md:w-[70vw] w-[90vw] h-[10vh] max-md:h-[8vh] bg-white absolute top-3 shadow-md rounded-full">
         <ul className="flex space-x-4 md:space-x-8 justify-around flex-wrap">
-          <li className="text-base md:text-lg font-semibold text-gray-700 hover:text-purple-500 transition duration-300">
+          <li className="text-base md:text-lg font-semibold text-gray-700 hover:text-purple-500 transition duration-300 max-sm:hidden">
             <a href="#home">Home</a>
           </li>
           <li className="text-base md:text-lg font-semibold text-gray-700 hover:text-purple-500 transition duration-300">
