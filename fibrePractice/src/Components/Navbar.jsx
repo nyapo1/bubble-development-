@@ -4,7 +4,7 @@ import Hero1 from './Hero';
 
 const Hero = () => {
   return (
-    <div className='w-screen h-screen bg-gradient-to-tr relative from-blue-500 via-white to-purple-600 flex justify-center'>
+    <div className='w-screen h-screen bg-gradient-to-tr relative from-blue-500 via-white to-purple-600 flex justify-center rounded-2xl'>
       <nav className="flex justify-center items-center md:w-[70vw] w-[90vw] h-[10vh] max-md:h-[8vh] bg-white absolute top-3 shadow-md rounded-full">
         <ul className="flex space-x-4 md:space-x-8 justify-around flex-wrap">
           <li className="nav-items max-sm:hidden">
